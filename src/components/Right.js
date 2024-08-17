@@ -2,7 +2,7 @@
 export default function Right() {
     return (
         <>
-            <div className="col-3 right">R</div>
+            <div className="col-2 right">R</div>
         </>
     )
 }

@@ -1,12 +1,83 @@
-.logo, .banner {
-border: 1px solid lightgray;
-    height: 15vh;
+.banner {
+    height: 500px;
     text-align: center;
-    line-height: 15vh;
+    line-height: 20vh;
+    background-image: url('https://m.media-amazon.com/images/S/sonata-images-prod/curiositystreamstandard_US_UnsubscribedPartnerCollectionPageHero/cfd9eee8-3c4a-48b5-b4a8-c05d4e07960a._UR3840,1440_SX2880_FMjpg_.jpeg'); /* Đường dẫn đến ảnh */
+    background-size: 100%; /* Điều chỉnh kích thước ảnh phủ kín */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    filter: brightness(0.7); /* Tạo hiệu ứng ảnh chìm bằng cách giảm độ sáng */
+    color: #fff; /* Màu chữ */
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+
 }
-.left, .mid, .right{
-    border: 1px solid lightgray;
+
+.text-banner {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.img-banner-text {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: crimson;
+}
+
+.navbar-menu-item {
+    margin-left: 10px;
+}
+
+.all-navbar {
+    height: 80px;
+    z-index: 2; /* Đảm bảo nội dung của navbar nằm trên banner */
+    margin-top: -330px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.3) !important; /* Màu trắng với độ trong suốt 30% */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ nhẹ nếu cần */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 255); /* Màu trắng mờ cho nút toggle */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 255%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.text-navbar {
+    z-index: 2; /* Đảm bảo nội dung của navbar nằm trên banner */
+    position: relative;
+    text-align: center;
+}
+
+.text-navbar-1 {
+    color: crimson;
+    font-size: 50px;
+    font-weight: 660;
+    margin-top: 10px;
+}
+
+.text-navbar-2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: -15px;
+
+}
+
+.text-navbar-3 {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.input-navbar{
+    margin-top: 10px;
+    width: 20%;
+}
+.left, .mid, .right {
     text-align: center;
     height: 100%;
-    /*line-height: 15vh;*/
 }
