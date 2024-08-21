@@ -1,19 +1,20 @@
 .banner {
-    height: 500px;
+    background-image: url('https://wallpaperaccess.com/full/774615.jpg'); /* Đường dẫn đến ảnh */
+    background-size: cover; /* Điều chỉnh kích thước ảnh phủ kín */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    filter: brightness(0.3); /* Tạo hiệu ứng ảnh chìm bằng cách giảm độ sáng */
+    background-position: 98% 2%;
+    height: 600px;
     text-align: center;
     line-height: 20vh;
-    background-image: url('https://m.media-amazon.com/images/S/sonata-images-prod/curiositystreamstandard_US_UnsubscribedPartnerCollectionPageHero/cfd9eee8-3c4a-48b5-b4a8-c05d4e07960a._UR3840,1440_SX2880_FMjpg_.jpeg'); /* Đường dẫn đến ảnh */
-    background-size: 100%; /* Điều chỉnh kích thước ảnh phủ kín */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
-    filter: brightness(0.7); /* Tạo hiệu ứng ảnh chìm bằng cách giảm độ sáng */
     color: #fff; /* Màu chữ */
     font-size: 2em;
     position: relative;
     z-index: 1;
-
 }
 
 .text-banner {
+    margin-top: -19px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -33,7 +34,7 @@
 .all-navbar {
     height: 80px;
     z-index: 2; /* Đảm bảo nội dung của navbar nằm trên banner */
-    margin-top: -330px;
+    margin-top: -430px;
     font-size: 20px;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.3) !important; /* Màu trắng với độ trong suốt 30% */
@@ -73,11 +74,63 @@
     margin-top: 10px;
 }
 
-.input-navbar{
-    margin-top: 10px;
-    width: 20%;
+.input-navbar {
+    margin-top: 2%;
+    width: 25%;
 }
-.left, .mid, .right {
+
+.mid {
     text-align: center;
     height: 100%;
+    background-image: url("https://wallpapers.com/images/file/red-ombre-background-sck630v00p19uq41.jpg");
+}
+
+.frame-detail-mid {
+    display: flex;
+    justify-content: space-between; /* Phân chia khoảng cách đều giữa các ô */
+    flex-wrap: wrap; /* Cho phép các phần tử con tự động xuống dòng nếu không đủ chỗ */
+}
+
+.frame-detail-mid > a {
+    background-color: #f1f1f1; /* Màu nền của ô */
+    width: 299px; /* Chiều rộng của ô */
+    height: 330px; /* Chiều cao của ô */
+    margin: 0 10px 40px 15px; /* Khoảng cách giữa các ô (trái, phải, dưới) */
+    /*text-align: center; !* Căn giữa văn bản *!*/
+    /*line-height: 280px; !* Căn giữa văn bản theo chiều dọc *!*/
+    /*display: flex;*/
+    /*align-items: center; !* Căn giữa nội dung theo chiều dọc *!*/
+    /*justify-content: center; !* Căn giữa nội dung theo chiều ngang *!*/
+    overflow: hidden;
+    position: relative;
+}
+
+.frame-detail-mid > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Tạo hiệu ứng khi di chuột */
+}
+.frame-detail-mid > a:hover img {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột vào */
+}
+.frame-detail-mid > a > .overlay-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền độ mờ 70% */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Tạo hiệu ứng chuyển tiếp cho opacity */
+    visibility: hidden; /* Ẩn văn bản khi không có hover */
+    padding-top: 70px;
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.frame-detail-mid > a:hover .overlay-text {
+    opacity: 1; /* Hiển thị văn bản khi di chuột vào */
+    visibility: visible; /* Đảm bảo văn bản hiển thị khi di chuột */
+
 }

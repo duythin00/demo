@@ -1,0 +1,92 @@
+.detail-all {
+    border: 1px solid white;
+    background: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.detail-img {
+    width: 70%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.detail-button-link-game {
+    height: 150px;
+    width: 20%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 35px;
+    text-align: center;
+}
+
+.detail-title-left > p {
+    /*display: flex;*/
+    text-align: left;
+    margin-left: 10%;
+}
+
+.detail-button-link-game > div {
+    text-align: center;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+
+/*comment*/
+
+
+.detail-comment-all {
+    background: white;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.detail-comment-login-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.detail-avatar-writing-comment {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-avatar-comment {
+    margin-top: 20px;
+    border: 1px solid darkgrey;
+    height: 70px;
+    width: 65px;
+    border-radius: 20px;
+    min-width: 80px;
+}
+.detail-writing-comment{
+    margin: 20px 0 0 20px;
+    width: 88%;
+    height: 150px;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+}
+/*button:hover .starts {*/
+/*    display: block;*/
+/*    filter: drop-shadow(0 0 10px #fffdef);*/
+/*}*/
+
+.detail-all-cmt{
+    display: flex;
+    margin-top: 20px;
+}
+.detail-detail-comment{
+    margin: 15px 0 0 20px;
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    justify-content: flex-start; /* Ép các phần tử sang phía trên cùng */
+    align-items: flex-start; /* Ép các phần tử sang trái */
+}
+
+
+
+

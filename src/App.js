@@ -1,8 +1,6 @@
 import './App.css';
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Left from "./components/Left";
-import Right from "./components/Right";
 import {Route, Routes} from "react-router-dom";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
@@ -17,8 +15,7 @@ function App() {
             <Header/>
             <Navbar/>
             <div className="row">
-                <Left/>
-                <div className="col-8 mid">
+                <div className="col-12 mid">
                     <Routes>
                         <Route path={'login'} element={<Login/>}>Login</Route>
                         <Route path={'register'} element={<Register/>}>Register</Route>
@@ -27,7 +24,6 @@ function App() {
                         <Route path={''} element={<Mid/>}></Route>
                     </Routes>
                 </div>
-                <Right/>
             </div>
         </div>
     </>
